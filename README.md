@@ -21,11 +21,12 @@ var $container = this.$('ol.container'),
       });
     };
 
-// instaniate unveiler with 0 threshold, a callback for applying an opacity transition, and the $container to watch for scroll events
+// instaniate unveiler with 0 threshold,
+// a callback for applying an opacity transition,
+// and the $container to watch for scroll events
 var unveiler = $container.find('img').unveil(0, callback, $container);
 
 // if necessary, set all your images 'src' attributes to be 'data-src' instead
-// this is useful if you're pulling from an API (like tumblr) and can't control the HTML template
 unveil.replaceDataSrc()
 
 // start listening for scroll and resize events
