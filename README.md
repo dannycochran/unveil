@@ -26,8 +26,8 @@ var $container = this.$('ol.container'),
 // and the $container to watch for scroll events
 var unveiler = $container.find('img').unveil(0, callback, $container);
 
-// if necessary, set all your images 'src' attributes to be 'data-src' instead
-unveil.replaceDataSrc()
+// set all your images 'src' attributes to be 'data-src' instead
+unveil.replaceDataSrc();
 
 // start listening for scroll and resize events
 unveiler.start();
