@@ -1,0 +1,7 @@
+{
+  "name": "unveil",
+  "repository": "dannycochran/unveil",
+  "description": "fork of unveil",
+  "version": "1.3.0",
+  "scripts": ["unveil.js"]
+}
