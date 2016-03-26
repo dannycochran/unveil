@@ -20,7 +20,6 @@
 
     function onUnveil() {
       var source = this.getAttribute(attrib);
-      source = source;
       if (source) {
         this.removeAttribute(attrib);
         this.setAttribute('src', source);
