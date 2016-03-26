@@ -14,15 +14,15 @@
         $container = $target || $w,
         th = threshold || 0,
         retina = window.devicePixelRatio > 1,
-        attrib = retina? 'data-src-retina' : 'data-src',
+        attrib = retina ? 'data-src-retina' : 'data-src',
         images = this,
         loading = '';
 
     function onUnveil() {
       var source = this.getAttribute(attrib);
-      source = source || this.getAttribute('data-src');
+      source = source;
       if (source) {
-        this.removeAttribute('data-src');
+        this.removeAttribute(attrib);
         this.setAttribute('src', source);
         if (typeof callback === 'function') callback.call(this);
       }
